@@ -1,0 +1,214 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	font: 15px/1.8 sans-serif;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+    color: black;
+}
+
+a:visited {
+	color: gray;
+}
+
+a:hover {
+	text-decoration: underline
+}
+
+input[type=text] {
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=image]  {
+	float: right;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	padding: 7px 10px;
+	background: white;
+	font-size: 16px;
+	cursor: pointer;
+	width: 46px;
+	height: 46px;
+}
+
+input[type=text]:focus {
+    width: 50%;
+}
+
+.ui-autocomplete {
+    max-height: 200px;
+	max-width: 247px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+  }
+  
+* html .ui-autocomplete {
+	height: 200px;
+}
+  
+.ui-autocomplete::-webkit-scrollbar
+{
+	width: 0 !important
+	/* prevent vertical scrollbar */
+}
+
+.ui-menu-item {
+	color: black;
+	list-style-type: none;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.ui-menu-item:hover {
+	background-color: #ddd;
+}
+
+.tableRow {
+	color: black;
+	border-radius: 4px;
+	background-color: white;
+	cursor: pointer;
+}
+.tableRow:hover {
+	background-color: #ddd;
+}
+
+.bgimg{
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50%;
+}
+.name {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.name span.border {
+	background-color: black;
+	color: white;
+	padding: 15px;
+	font-size: 40px;
+	letter-spacing: 7px;
+}
+.headerLeft {
+	padding: 25px;
+	text-alaign: left;
+	display: inline;
+}
+
+.headerRight {
+	padding: 50px;
+	float: right;
+	text-alaign: right;
+	display: inline;
+}
+
+.logo {
+	background-color: black;
+	color: #FF6A00;
+	border-radius: 100%;
+	padding: 10px;
+	max-width: 10%;
+	min-width: 75px;
+	height: auto;
+}
+
+.headerLogo {
+	padding: 10px;
+	max-width: 10%;
+	min-width: 75px;
+	height: auto;
+}
+
+.navBar {
+    overflow: hidden;
+}
+
+.navBar a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color:white;
+    padding: 10px;
+    font-size: 20px;
+    transition: .5s;
+	font-weight: bold;
+	background-color: black;
+	cursor: pointer;
+}
+
+.navBar a:hover {
+    color: white;
+}
+
+.indexPageContent {
+	background-color: #f2f2f2;
+	color: black;
+	text-align: center;
+	padding-left: 15%;
+    padding-right: 15%;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.indexPageContent span.head {
+    font-size: 32px;
+	display: block;
+    padding-top: 50px;
+}
+
+.indexPageContent span.body {
+	text-align: left;
+	font-size: 26px;
+	display: block;
+    padding-top: 15px;
+	padding-bottom: 50px;
+}
+
+.indexPageContentAlt {
+	color: black;
+	text-align: center;
+	padding-left: 25%;
+    padding-right: 25%;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.indexPageContentAlt span.head {
+    font-size: 32px;
+	display: block;
+    padding-top: 50px;
+}
+
+.indexPageContentAlt span.body {
+	text-align: left;
+	font-size: 26px;
+	display: block;
+    padding-top: 15px;
+	padding-bottom: 50px;
+}

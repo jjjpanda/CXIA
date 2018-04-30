@@ -1,0 +1,1 @@
+require('./coinDatabase').calcForListOfCoins(require('./coinDatabase').madeDatabases())
