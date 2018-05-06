@@ -1,24 +1,24 @@
-body, html {
+body, html {/*universal*/
 	height: 100%;
 	margin: 0;
 	font: 15px/1.8 sans-serif;
 	color: white;
 }
 
-a {
+a { /*link styling*/
 	text-decoration: none;
     color: black;
 }
 
-a:visited {
+a:visited { /*visited link styling*/
 	color: gray;
 }
 
-a:hover {
+a:hover { /*hover link styling*/
 	text-decoration: underline
 }
 
-input[type=text] {
+input[type=text] { /*text inputs (search box)*/
     width: 150px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -30,7 +30,7 @@ input[type=text] {
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
-input[type=image]  {
+input[type=image]  {/*image inputs (search button)*/
 	float: right;
 	box-sizing: border-box;
 	border: 2px solid #ccc;
@@ -43,29 +43,28 @@ input[type=image]  {
 	height: 46px;
 }
 
-input[type=text]:focus {
+input[type=text]:focus { /*expand search box on focus*/
     width: 50%;
 }
 
-.ui-autocomplete {
+.ui-autocomplete { /*autocomplete dropdown*/
     max-height: 200px;
 	max-width: 247px;
     overflow-y: auto;
-    /* prevent horizontal scrollbar */
+    /*prevent horizontal scrollbar*/
     overflow-x: hidden;
   }
   
-* html .ui-autocomplete {
+* html .ui-autocomplete {/*for explorer*/
 	height: 200px;
 }
   
-.ui-autocomplete::-webkit-scrollbar
+.ui-autocomplete::-webkit-scrollbar /*prevent vertical scrollbar*/
 {
 	width: 0 !important
-	/* prevent vertical scrollbar */
 }
 
-.ui-menu-item {
+.ui-menu-item { /*autocomplete individual row*/
 	color: black;
 	list-style-type: none;
 	box-sizing: border-box;
@@ -76,21 +75,21 @@ input[type=text]:focus {
 	background-repeat: no-repeat;
 	cursor: pointer;
 }
-.ui-menu-item:hover {
+.ui-menu-item:hover { /*autocomplete row hovering*/
 	background-color: #ddd;
 }
 
-.tableRow {
+.tableRow { /*view all table row*/
 	color: black;
 	border-radius: 4px;
 	background-color: white;
 	cursor: pointer;
 }
-.tableRow:hover {
+.tableRow:hover { /*view all table row hover*/
 	background-color: #ddd;
 }
 
-.bgimg{
+.bgimg{ /*main background image*/
 	position: relative;
 	opacity: 0.70;
 	background-position: center;
@@ -98,7 +97,7 @@ input[type=text]:focus {
 	background-size: cover;
 	height: 50%;
 }
-.name {
+.name { /*main title*/
 	position: absolute;
 	left: 0;
 	top: 50%;
@@ -107,27 +106,27 @@ input[type=text]:focus {
 	text-transform: uppercase;
 }
 
-.name span.border {
+.name span.border { /*border for main title*/
 	background-color: black;
 	color: white;
 	padding: 15px;
 	font-size: 40px;
 	letter-spacing: 7px;
 }
-.headerLeft {
+.headerLeft { /*left header (header logo container)*/
 	padding: 25px;
 	text-alaign: left;
 	display: inline;
 }
 
-.headerRight {
+.headerRight { /*right header (nav bar container)*/
 	padding: 50px;
 	float: right;
 	text-alaign: right;
 	display: inline;
 }
 
-.logo {
+.logo { /*main logo*/
 	background-color: black;
 	color: #FF6A00;
 	border-radius: 100%;
@@ -137,18 +136,18 @@ input[type=text]:focus {
 	height: auto;
 }
 
-.headerLogo {
+.headerLogo { /*top-left header logo*/
 	padding: 10px;
 	max-width: 10%;
 	min-width: 75px;
 	height: auto;
 }
 
-.navBar {
+.navBar { /*navigation*/
     overflow: hidden;
 }
 
-.navBar a {
+.navBar a { /*navigation bar link styling*/
 	text-transform: uppercase;
 	text-decoration: none;
 	color:white;
@@ -160,11 +159,11 @@ input[type=text]:focus {
 	cursor: pointer;
 }
 
-.navBar a:hover {
+.navBar a:hover { /*navigation bar link hover*/
     color: white;
 }
 
-.indexPageContent {
+.indexPageContent { /*content container*/
 	background-color: #f2f2f2;
 	color: black;
 	text-align: center;
@@ -175,13 +174,13 @@ input[type=text]:focus {
 	margin-right: auto;
 }
 
-.indexPageContent span.head {
+.indexPageContent span.head { /*content container head*/
     font-size: 32px;
 	display: block;
     padding-top: 50px;
 }
 
-.indexPageContent span.body {
+.indexPageContent span.body { /*content container body*/
 	text-align: left;
 	font-size: 26px;
 	display: block;
@@ -189,7 +188,7 @@ input[type=text]:focus {
 	padding-bottom: 50px;
 }
 
-.indexPageContentAlt {
+.indexPageContentAlt { /*alternate content container*/
 	color: black;
 	text-align: center;
 	padding-left: 25%;
@@ -199,13 +198,13 @@ input[type=text]:focus {
 	margin-right: auto;
 }
 
-.indexPageContentAlt span.head {
+.indexPageContentAlt span.head { /*alternate content container head*/
     font-size: 32px;
 	display: block;
     padding-top: 50px;
 }
 
-.indexPageContentAlt span.body {
+.indexPageContentAlt span.body { /*alternate content container body*/
 	text-align: left;
 	font-size: 26px;
 	display: block;
