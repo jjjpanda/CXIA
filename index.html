@@ -1,16 +1,16 @@
 <!doctype html>
 <html>
 	<head>
-		<title>CXIA</title>
+		<title>CXIA</title> 
 		<link rel="stylesheet" type="text/css" href="./styles/style.css"/>
 	</head>
 	<body>
 		<div class="bgimg" style="background-image: url('images/background.png');">
 			<header width=100%>
-				<div class="headerLeft">
+				<div class="headerLeft"> <!--logo DIV-->
 					<a href="index.html"><img class="headerLogo" src="images/logo.png"></a>
 				</div>
-				<div class="headerRight">
+				<div class="headerRight"> <!--navigation DIV-->
 					<div class="navBar">
 						<a href="index.html">Home</a>
 						<a onClick="writeText('BTC')">Bitcoin</a>
@@ -19,37 +19,37 @@
 						<a onClick="viewAll()">View All</a>
 					</div>
 					<div class="navBar">
-					<FORM name="myform" onsubmit="return false">
+					<form name="myform" onsubmit="return false"> <!--search bar form-->
 						<input type="image" name="search" src="images/search.svg" style="float:right" onClick="readText(this.form)">
 						<input type="text" id="tags" name="inputbox" style="float:right" value="" placeholder="Search...">
-					</FORM>
+					</form>
 					</div>
 				</div>
 			</header>
 			
-			<div class="name">
+			<div class="name"><!--main title DIV-->
 				<span id="mainTitle" class="border">CXIA</span><br>
 				<span id="mainSubTitle" class="border">Cryptocurrency Exchange Indicator Analysis</span>
 			</div>
 		</div>
-		<div class="indexPageContent">
+		<div class="indexPageContent"><!--content DIV 1-->
 			<span class="head" id="pageHeadOne">About CXIA</span>
 			<span class="body" id="pageBodyOne">
 				CXIA (Cryptocurrency Exchange Indicator Analysis) uses historical data and price/volume indicators to analyze and screen cryptocurrencies and digital assets for buy or sell signals by purely technical analysis. Using moving averages, strength indexing, and price-volume convergence we can model the relative probability of a cryptocurrency's momentum upwards or downwards.
 			</span>
 		</div>
-		<div class="indexPageContentAlt">
+		<div class="indexPageContentAlt"><!--content DIV 2-->
 			<span class="head" id="pageHeadTwo"></span>
 			<span class="body" id="pageBodyTwo"></span>
 		</div>
-		<div class="indexPageContent">
+		<div class="indexPageContent"><!--content DIV 3-->
 			<span class="head" id="pageHeadThree"></span>
 			<span class="body" id="pageBodyThree"></span>
 		</div>
 	</body>
-	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="https://www.gstatic.com/charts/loader.js"></script>
-  <script src="https://unpkg.com/tippy.js@2.5.2/dist/tippy.all.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script><!--jQuery-->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><!--jQuery UI-->
+  <script src="https://www.gstatic.com/charts/loader.js"></script><!--google charts-->
+  <script src="https://unpkg.com/tippy.js@2.5.2/dist/tippy.all.min.js"></script><!--tippy-->
   <script src="scripts/script.js"></script>
 </html>
