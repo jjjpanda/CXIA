@@ -11,6 +11,12 @@ Curl: https://www.npmjs.com/package/curl
 
 which can be downloaded on command line with ```npm install curl```
 
+In addition, the following line needs to be edited in order for json files to be processed by the webpage:
+
+scripts/script.js Line 201:
+
+```var JSONData = Get('YOUR_HTTP_SERVER_HERE/CXIA/JSON/JSONS/'+currency+'.json')```
+
 ## Setting up the Cron Daemon:
 
 In the JSON folder, there are 3 files: a createJSON.sh file calls the run.js file which calls the coinDatabase.js file. The cd command in createJSON.sh must be adjusted such that it links to the JSON folder. 
